@@ -17,13 +17,13 @@ public class TestJumpEvent {
     @SubscribeEvent
     public static void  TestJumpEvent(LivingEvent.LivingJumpEvent event)
     {
-        Tutorial.LOGGER.info("Jump event fired!");
+        //Tutorial.LOGGER.info("Jump event fired!");
         LivingEntity livingEntity = event.getEntityLiving();
         //World world = livingEntity.getEntityWorld();
 
         //world.setBlockState(livingEntity.getPosition().add(0,5,0) , RegistryHandler.RUBY_BLOCK.get().getDefaultState());
 
-        livingEntity.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST,600,3));
+        //livingEntity.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST,600,3));
        // livingEntity.setGlowing(true);
     }
 }

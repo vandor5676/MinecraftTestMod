@@ -5,6 +5,7 @@ import com.my.testmod.blocks.BlockItemBase;
 import com.my.testmod.blocks.RubyBlock;
 import com.my.testmod.items.GoldenFlesh;
 import com.my.testmod.items.ItemBase;
+import com.my.testmod.items.RubyBoots;
 import com.my.testmod.items.RubyDagger;
 import net.minecraft.block.Block;
 import net.minecraft.item.Food;
@@ -32,6 +33,9 @@ public class RegistryHandler {
     //items
     public static final RegistryObject<Item> RUBY  =ITEMS.register("ruby", ItemBase::new);
     public static final RegistryObject<Item> GOLDEN_FLESH  =ITEMS.register("golden_flesh", GoldenFlesh::new);
+    //tools
+
+    //weapons
     public static final RegistryObject<Item> RUBY_DAGGER = ITEMS.register("ruby_dagger", RubyDagger::new);
 
 
@@ -41,7 +45,8 @@ public class RegistryHandler {
     //block items
     public static final RegistryObject RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", ()->new BlockItemBase(RUBY_BLOCK.get()));
 
-
+    //armor
+    public static final RegistryObject RUBY_BOOTS = ITEMS.register("ruby_boots", RubyBoots::new);
 
 }
 
