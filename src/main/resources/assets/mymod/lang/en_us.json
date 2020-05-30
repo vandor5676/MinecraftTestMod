@@ -4,5 +4,6 @@
   "item.mymod.ruby_dagger": "Ruby Dagger",
   "item.mymod.ruby_boots": "Ruby Boots",
   "block.mymod.ruby_block": "Ruby Block",
+  "block.mymod.rope_block": "Rope Block",
   "itemGroup.myTab": "Tutorial"
 }
