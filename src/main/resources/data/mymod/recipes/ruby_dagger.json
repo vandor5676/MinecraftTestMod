@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " r ",
+    " s "
+  ],
+  "key": {
+    "r": {
+      "item": "mymod:ruby"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "mymod:ruby_dagger"
+  }
+}

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "mymod:blocks/rope_texture",
-		"particle": "mymod/rope_texture"
+		"particle": "mymod:blocks/rope_texture"
 	},
 	"elements": [
 		{

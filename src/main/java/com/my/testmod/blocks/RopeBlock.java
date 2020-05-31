@@ -52,7 +52,7 @@ public class RopeBlock extends Block {
         .harvestLevel(0)
         .harvestTool(null)
         //.notSolid()o
-        .doesNotBlockMovement()
+        //.doesNotBlockMovement()
         );
 
         this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH));
@@ -99,13 +99,13 @@ public class RopeBlock extends Block {
     @Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
 //        return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
-        if(!worldIn.isRemote())
-        {
-            ServerWorld serverWorld = (ServerWorld)worldIn;
-            LightningBoltEntity entity = new LightningBoltEntity(worldIn, pos.getX(),pos.getY(),pos.getZ(),false);
-            serverWorld.addLightningBolt(entity);
-
-        }
+//        if(!worldIn.isRemote())
+//        {
+//            ServerWorld serverWorld = (ServerWorld)worldIn;
+//            LightningBoltEntity entity = new LightningBoltEntity(worldIn, pos.getX(),pos.getY(),pos.getZ(),false);
+//            serverWorld.addLightningBolt(entity);
+//
+//        }
         return ActionResultType.SUCCESS;
     }
 }

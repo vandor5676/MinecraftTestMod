@@ -5,21 +5,15 @@ import com.my.testmod.blocks.BlockItemBase;
 import com.my.testmod.blocks.RopeBlock;
 import com.my.testmod.blocks.RubyBlock;
 import com.my.testmod.items.GoldenFlesh;
-import com.my.testmod.items.ItemBase;
+import com.my.testmod.items.Ruby;
 import com.my.testmod.items.RubyBoots;
 import com.my.testmod.items.RubyDagger;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.Food;
 import net.minecraft.item.Item;
-import net.minecraft.potion.Effect;
-import net.minecraft.potion.EffectInstance;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.function.Supplier;
 
 public class RegistryHandler {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Tutorial.MOD_ID);
@@ -33,8 +27,9 @@ public class RegistryHandler {
     }
 
     //items
-    public static final RegistryObject<Item> RUBY  =ITEMS.register("ruby", ItemBase::new);
+    public static final RegistryObject<Item> RUBY  =ITEMS.register("ruby", Ruby::new);
     public static final RegistryObject<Item> GOLDEN_FLESH  =ITEMS.register("golden_flesh", GoldenFlesh::new);
+
     //tools
 
     //weapons

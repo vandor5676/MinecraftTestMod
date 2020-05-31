@@ -1,0 +1,10 @@
+
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mymod:ruby_boots"
+  },
+  "result": "mymod:ruby",
+  "experience": 1.0,
+  "cookingtime": 200
+}
