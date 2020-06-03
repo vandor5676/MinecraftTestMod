@@ -1,5 +1,6 @@
 package com.my.testmod;
 
+import com.my.testmod.util.ModTileEntityTypes;
 import com.my.testmod.util.RegistryHandler;
 import com.my.testmod.world.gen.TutorialOreJen;
 import net.minecraft.block.Block;
@@ -29,6 +30,8 @@ public class Tutorial
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "mymod";
 
+
+
     public Tutorial() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -39,10 +42,13 @@ public class Tutorial
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+        ModTileEntityTypes.TILE_ENTITY_TYPES.register( FMLJavaModLoadingContext.get().getModEventBus());
         RegistryHandler.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+
     }
 
     private void setup(final FMLCommonSetupEvent event)
