@@ -5,5 +5,10 @@
   "item.mymod.ruby_boots": "Ruby Boots",
   "block.mymod.ruby_block": "Ruby Block",
   "block.mymod.rope_block": "Rope Block",
+
+  "block.mymod.ruby_fence": "Ruby Fence",
+  "block.mymod.ruby_button": "Ruby Button",
+  "block.mymod.ruby_pressure_plate": "Ruby Pressure Plate",
+  "block.mymod.ruby_stairs": "Ruby Stairs",
   "itemGroup.myTab": "Tutorial"
 }

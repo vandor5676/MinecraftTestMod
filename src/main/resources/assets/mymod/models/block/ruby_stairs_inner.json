@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "mymod:blocks/ruby_block",
+        "top": "mymod:blocks/ruby_block",
+        "side": "mymod:blocks/ruby_block"
+    }
+}
