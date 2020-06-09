@@ -1,5 +1,6 @@
 package com.my.testmod;
 
+import com.my.testmod.util.ModContainerTypes;
 import com.my.testmod.util.ModTileEntityTypes;
 import com.my.testmod.util.RegistryHandler;
 import com.my.testmod.world.gen.TutorialOreJen;
@@ -43,6 +44,7 @@ public class Tutorial
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
         ModTileEntityTypes.TILE_ENTITY_TYPES.register( FMLJavaModLoadingContext.get().getModEventBus());
+        ModContainerTypes.CONTAINER_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
         RegistryHandler.init();
 
         // Register ourselves for server and other game events we are interested in

@@ -40,6 +40,7 @@ public class RopeBlock extends Block {
 
     private static final VoxelShape SHAPE_S = Stream.of(
             Block.makeCuboidShape(7, -1, 7, 8, 16, 8),
+            Block.makeCuboidShape(7, -1, 7, 8, 16, 8),
             Block.makeCuboidShape(7, 2, 8, 8, 15, 9),
             Block.makeCuboidShape(8, 1, 8, 9, 16, 9),
             Block.makeCuboidShape(8, 0, 7, 9, 17, 8)

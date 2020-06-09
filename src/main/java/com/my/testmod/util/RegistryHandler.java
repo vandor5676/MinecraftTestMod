@@ -45,6 +45,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> RUBY_FENCE =  BLOCKS.register("ruby_fence", ()->new FenceBlock(Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> RUBY_BUTTON =  BLOCKS.register("ruby_button", ()->new ModWoodButtonBlock(Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> RUBY_PRESSURE_PLATE =  BLOCKS.register("ruby_pressure_plate", ()->new ModPressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.ROCK)));
+    public static final RegistryObject<Block> RUBY_CHEST = BLOCKS.register("ruby_chest",()-> new RubyChestBlock(Block.Properties.from(RegistryHandler.RUBY_BLOCK.get())));
 
     //block items
     public static final RegistryObject RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", ()->new BlockItemBase(RUBY_BLOCK.get()));
@@ -54,6 +55,7 @@ public class RegistryHandler {
     public static final RegistryObject RUBY_FENCE_ITEM = ITEMS.register("ruby_fence",() ->new BlockItemBase(RUBY_FENCE.get()));
     public static final RegistryObject RUBY_BUTTON_ITEM = ITEMS.register("ruby_button",() ->new BlockItemBase(RUBY_BUTTON.get()));
     public static final RegistryObject RUBY_PRESSURE_PLATE_ITEM = ITEMS.register("ruby_pressure_plate",() ->new BlockItemBase(RUBY_PRESSURE_PLATE.get()));
+    public static final RegistryObject RUBY_Chest = ITEMS.register("ruby_chest",() ->new BlockItemBase(RUBY_CHEST.get()));
 
     //armor
     public static final RegistryObject RUBY_BOOTS = ITEMS.register("ruby_boots", RubyBoots::new);
