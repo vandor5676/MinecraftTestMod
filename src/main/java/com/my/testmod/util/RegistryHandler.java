@@ -6,9 +6,7 @@ import com.my.testmod.items.GoldenFlesh;
 import com.my.testmod.items.Ruby;
 import com.my.testmod.items.RubyBoots;
 import com.my.testmod.items.RubyDagger;
-import net.minecraft.block.Block;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -47,6 +45,11 @@ public class RegistryHandler {
     public static final RegistryObject<Block> RUBY_PRESSURE_PLATE =  BLOCKS.register("ruby_pressure_plate", ()->new ModPressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> RUBY_CHEST = BLOCKS.register("ruby_chest",()-> new RubyChestBlock(Block.Properties.from(RegistryHandler.RUBY_BLOCK.get())));
 
+    public static final RegistryObject<Block> RUBY_PLANKS = BLOCKS.register("ruby_planks",RubyPlanks::new);
+    public static final RegistryObject<Block> RUBY_LOG = BLOCKS.register("ruby_log",RubyWood::new);
+    public static final RegistryObject<Block> RUBY_LEAVES = BLOCKS.register("ruby_leaves",RubyLeaves::new);
+    public static final RegistryObject<Block> RUBY_SAPLING = BLOCKS.register("ruby_sapling",()->new RubySapling(null, Block.Properties.from(Blocks.OAK_SAPLING)));
+
     //block items
     public static final RegistryObject RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", ()->new BlockItemBase(RUBY_BLOCK.get()));
     public static final RegistryObject ROPE_BLOCK_ITEM = ITEMS.register("rope_block",() ->new BlockItemBase(ROPE_BLOCK.get()));
@@ -56,6 +59,11 @@ public class RegistryHandler {
     public static final RegistryObject RUBY_BUTTON_ITEM = ITEMS.register("ruby_button",() ->new BlockItemBase(RUBY_BUTTON.get()));
     public static final RegistryObject RUBY_PRESSURE_PLATE_ITEM = ITEMS.register("ruby_pressure_plate",() ->new BlockItemBase(RUBY_PRESSURE_PLATE.get()));
     public static final RegistryObject RUBY_Chest = ITEMS.register("ruby_chest",() ->new BlockItemBase(RUBY_CHEST.get()));
+
+    public static final RegistryObject RUBY_PLANKS_ITEM = ITEMS.register("ruby_planks", ()->new BlockItemBase(RUBY_PLANKS.get()));
+    public static final RegistryObject RUBY_LOG_ITEM = ITEMS.register("ruby_log", ()->new BlockItemBase(RUBY_LOG.get()));
+    public static final RegistryObject RUBY_LEAVES_ITEM = ITEMS.register("ruby_leaves", ()->new BlockItemBase(RUBY_LEAVES.get()));
+    public static final RegistryObject RUBY_SAPLING_ITEM = ITEMS.register("ruby_sapling", ()->new BlockItemBase(RUBY_SAPLING.get()));
 
     //armor
     public static final RegistryObject RUBY_BOOTS = ITEMS.register("ruby_boots", RubyBoots::new);

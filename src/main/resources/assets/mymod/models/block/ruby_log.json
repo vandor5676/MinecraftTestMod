@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "mymod:blocks/ruby_log_top",
+    "side": "mymod:blocks/ruby_log"
+  }
+}

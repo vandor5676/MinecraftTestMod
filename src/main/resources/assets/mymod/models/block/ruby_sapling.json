@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "mymod:blocks/ruby_sapling"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "mymod:block/ruby_log" },
+    "axis=z":   { "model": "mymod:block/ruby_log", "x": 90 },
+    "axis=x":   { "model": "mymod:block/ruby_log", "x": 90, "y": 90 }
+  }
+}

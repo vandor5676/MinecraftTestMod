@@ -7,6 +7,11 @@
   "block.mymod.rope_block": "Rope Block",
   "block.mymod.ruby_chest": "Ruby Chest",
 
+  "block.mymod.ruby_log": "Ruby Log",
+  "block.mymod.ruby_planks": "Ruby Planks",
+  "block.mymod.ruby_leaves": "Ruby leaves",
+  "block.mymod.ruby_sapling": "Ruby Sapling",
+
   "block.mymod.ruby_fence": "Ruby Fence",
   "block.mymod.ruby_button": "Ruby Button",
   "block.mymod.ruby_pressure_plate": "Ruby Pressure Plate",
