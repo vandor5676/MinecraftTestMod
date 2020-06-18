@@ -6,6 +6,7 @@ import com.my.testmod.items.GoldenFlesh;
 import com.my.testmod.items.Ruby;
 import com.my.testmod.items.RubyBoots;
 import com.my.testmod.items.RubyDagger;
+import com.my.testmod.world.feature.RubyTree;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -48,7 +49,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> RUBY_PLANKS = BLOCKS.register("ruby_planks",RubyPlanks::new);
     public static final RegistryObject<Block> RUBY_LOG = BLOCKS.register("ruby_log",RubyWood::new);
     public static final RegistryObject<Block> RUBY_LEAVES = BLOCKS.register("ruby_leaves",RubyLeaves::new);
-    public static final RegistryObject<Block> RUBY_SAPLING = BLOCKS.register("ruby_sapling",()->new RubySapling(null, Block.Properties.from(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> RUBY_SAPLING = BLOCKS.register("ruby_sapling",()->new RubySapling(RubyTree::new, Block.Properties.from(Blocks.OAK_SAPLING)));
 
     //block items
     public static final RegistryObject RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", ()->new BlockItemBase(RUBY_BLOCK.get()));
